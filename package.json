@@ -1,7 +1,7 @@
 {
-  "name": "node-js-getting-started",
-  "version": "0.3.0",
-  "description": "A sample Node.js app using Express 4",
+  "name": "picross-vs-server",
+  "version": "0.1.0",
+  "description": "The server to handle Picross VS games",
   "engines": {
     "node": "10.x"
   },
@@ -16,16 +16,18 @@
   },
   "devDependencies": {
     "request": "^2.81.0",
-    "tape": "^4.7.0"
+    "tape": "^4.7.0",
+    "socket.io": "^2.1.1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/heroku/node-js-getting-started"
+    "url": "https://github.com/KnifesmithCode/picross-vs-server"
   },
   "keywords": [
     "node",
     "heroku",
-    "express"
+    "express",
+    "picross"
   ],
   "license": "MIT"
 }
