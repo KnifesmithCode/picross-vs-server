@@ -12,8 +12,8 @@ app.use(express.static(path.join(__dirname, 'public')))
   .set('view engine', 'ejs')
   .get('/', (req, res) => res.render('pages/index'));
 
-io.on('connection', function(client){
+io.on('connection', function(socket){
   console.log('New user connected');
-  client.on('event', function(data){console.log(data)});
-  client.on('disconnect', () => console.log('User disconnected'));
+  socket.on('event', function(data){console.log(data)});
+  socket.on('disconnect', () => console.log('User disconnected'));
 });
