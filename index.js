@@ -15,5 +15,5 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 io.on('connection', function(client){
   client.on('event', function(data){console.log(data)});
-  client.on('disconnect', function(){console.log('User disconnected'});
+  client.on('disconnect', () => console.log('User disconnected'));
 });
