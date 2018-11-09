@@ -13,7 +13,7 @@ app.use(express.static(path.join(__dirname, 'public')))
   .get('/', (req, res) => res.render('pages/index'));
 
 io.on('connection', function(socket){
-  console.log('New user connected');
-  socket.on('event', function(data){console.log(data)});
+  console.log('User connected');
+  socket.on('event', function(data){console.log('Event: ' + data)});
   socket.on('disconnect', () => console.log('User disconnected'));
 });
